@@ -1,0 +1,466 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color: #e40046;
+}
+body{
+    background: #fff; 
+    font-family: "poppins", sans-serif;
+}
+.step{
+    display: none;
+}    
+.step.active{
+    display: block; 
+}
+.content{
+    display: none;
+}
+.appointment-header{
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, .2);
+}
+.appointment-header .tbn .menu i{
+    font-size: 25px;
+    padding: 5%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .3);
+    color: var(--color);
+    margin: 2%;
+    float: right;
+}
+.appointment-header .tbn .menu i:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .7);
+}
+
+.appointment-header .logo{
+    width: 100%;
+    margin: 0 auto;
+}
+.appointment-header .logo img{
+    width: 50%;
+    height: 50%;
+}
+.appointment-header .tbn .back i{
+    font-size: 25px;
+    padding: 5%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .3);
+    color: var(--color);
+    margin: 2%;
+    float: left;
+}
+.appointment-header .tbn .back i:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .7);
+}
+.appointment-header .appointment-h2{
+    padding-top: 20%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+.container form .step{
+    margin: 2% 2% 10% 2%;
+    padding: 2% 2% 10% 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1);
+} 
+.container form .step .appointment-p, 
+.time p{
+    font-size: larger;
+    text-align: center;
+    padding: 2%;
+}
+.container form .step .select-appointment .select{
+    border-radius: 3%; 
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1);
+}
+.container form .step .select-p{
+    width: 90%;
+    margin: 10% auto;
+    border-bottom: 2px solid #c1c1c1;
+    cursor: pointer;
+}
+.container form .step .select-p i{
+    float: right;
+}
+.container form .step .select-appointment .select-appointment{
+    border: none;
+    margin-bottom: 10px;
+}
+.container form .step .select-appointment .select input{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin: 5% 5% 0 0;
+}
+.container form .step .select-appointment .select h1{
+    padding: 2% 0 5% 2%;
+}
+.container form .step .select-appointment .select p{
+    padding: 2% 0 5% 2%;
+}
+.container form .step .select-appointment .select .price{
+    color: var(--color);
+    font-size: x-large;
+}
+.container form .step .select-appointment .select .duration{
+    color: var(--color);
+    font-size: x-large;
+    margin-bottom: 10%;
+    border-bottom: 2px solid #c1c1c1;
+}
+.container form .step .select-appointment,
+.container form .step .subtotal{
+    margin-top: 5%;
+}
+.container form .step .select-appointment select{
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 1%;
+    margin: 2% 0 2% 0;
+}
+.container form .step .subtotal{
+    font-size: medium;
+    margin-bottom: 4%;
+}
+.container form .step .subtotal p{
+    width: 90%;
+    margin: auto;
+}
+.container form .step .subtotal .price input{
+    float: right;
+    border: none;
+    width: 25%;
+    font-size: medium;
+}
+.container form .step .time{
+    width: 100%;
+    margin: auto;
+    height: 70vh;
+}
+/* .container form .step .time input{
+    padding: 10px;
+    width: 88%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    font-size: large;
+    border-radius: 2%;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1); 
+} */
+.container form .step .dateAndTime p{
+    padding: 10px;
+    width: 88%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: medium;
+    border-radius: 2%;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1); 
+}
+.container form .step .time .timer{
+    width: 90%;
+    margin: auto;
+    font-size: medium;
+}
+.container form .step .time .timer p{
+    float: left;
+    width: 31%;
+    border-radius: 3%;
+    padding: 5%;
+    margin: 1%;
+    color: #e40046;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1);   
+}
+.container form .step .time .timer p:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .3),
+    -10px -10px 10px rgba(255, 255, 255, .3),
+    inset 10px 10px 10px rgba(0, 0, 0, .3),
+    inset -10px -10px 10px rgba(255, 255, 255, .3);  
+}
+.container form .step .time .timer p:active{
+    box-shadow: 10px 10px 10px rgba(19, 102, 150, 0.137),
+    -10px -10px 10px rgba(180, 8, 51, 0.575),
+    inset 10px 10px 10px rgba(11, 87, 175, 0.3),
+    inset -10px -10px 10px rgba(40, 70, 202, 0.644);  
+}
+.container form .step .form-align{
+    width: 90%;
+    margin: auto;
+}
+.container form .step .form-align input{
+    padding: 10px;
+    width: 100%;
+    margin: 15px 2px;
+    font-size: medium;
+    border-radius: 2%;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1); 
+}
+.container form .step .form-align ul li{
+    list-style: none;
+    margin: 5%;
+}
+.container form .step .form-align ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: medium;
+}
+.container form .step .form-align ul li a:hover{
+    color: var(--color);
+}
+.container form .step .teamsAndCondition{
+    margin-left: 1%;
+    font-size: small;
+}
+.container form .step .teamsAndCondition p{
+    width: 90%;
+    margin: auto;
+}
+.container form .step .teamsAndCondition p input{
+    width: 20px;
+    height: 20px;
+} 
+.container form .step .summary{
+    width: 100%;
+    margin: auto;
+}
+.container form .step .summary p{
+    margin-left: 5%;
+}
+.container form .step .summary label{
+    margin-left: 5%;
+}
+.container form .step .summary .summary-left{
+    margin-left: 5%;
+}
+.container form .step .summary .summary-right{
+    margin-left: 50%;
+    color: #29054b;
+    margin-bottom: 5%;
+}
+.container form .step .summary .summary-right input{
+    width: 70%;
+    border: none;
+    box-shadow: none;
+    color: #29054b;
+}
+.container form .step .summary .summary-top b{
+    font-size: medium;
+    color: #29054b;
+}
+.container form .step .summary .summary-top{
+    margin-bottom: 5%;
+}
+.container form .step .summary input{
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+    font-size: medium;
+    border: none;
+    border-radius: 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1); 
+}
+.container form .step .summary textarea{
+    width: 100%;
+    font-size: large;
+    padding: 1%;
+    border: none;
+    border-radius: 2%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1); 
+} 
+.container form .step .summary .condition p{
+    margin-top: 5%;
+}
+.container form .step .summary .condition .condition-paragraph{
+    font-size: small;
+} 
+.container form .step .payment p input{
+    border: none;
+    font-size: medium;
+    width: 27%;
+    font-weight: 600;
+}
+.container form .step .payment .nextstep-btn .next-btn p input{
+    order: none;
+    width: 35%;
+}
+.container form .step .payment{
+    width: 90%;
+    margin: 0 auto;
+    padding: 5%;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1);
+}
+.container form .step .payment h4{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.container form .step .payment i{
+    margin-left: 40%;
+}
+.container form .step .conformationByEmail i{
+    margin-left: 40%;
+}
+.container form .step .conformationByEmail{
+    width: 90%;
+    margin: 5% auto;
+    padding: 5%;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+    -10px -10px 10px rgba(255, 255, 255, .1),
+    inset 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -10px -10px 10px rgba(255, 255, 255, .1);
+}
+.container form .step .NRU .btn,
+.step-8 .btn{
+    width: 85%;
+    margin: auto;
+}
+.container form .step .NRU .profile-body 
+.profile-nextAppointments .summary{
+    width: 85%;
+}
+.container form .step .NRU ul{
+    margin: 5%;
+}
+.container form .step .NRU ul li{
+    list-style: none;
+    margin: 2%;
+}
+.container form .step .NRU ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: #550d98;
+}
+.container form .step .NRU p{
+    font-size: medium; 
+    width: 85%;
+    margin: auto;  
+}
+.container form .btn p{
+    font-size: medium; 
+}
+.container form .step .appointment-pay{
+    width: 90%;
+    margin: auto;
+    font-size: x-large;
+    color: #000;
+    padding: 5%;
+    text-align: center;
+    margin-bottom: 5%;
+    background: #f9ac05;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+                -10px -10px 10px rgba(255, 255, 255, .1),
+                inset 10px 10px 10px rgba(0, 0, 0, .1),
+                inset -10px -10px 10px rgba(255, 255, 255, .1); 
+                border-radius: 1%;
+}
+.container form .step .form-align select{
+    width: 100%;
+    padding: 10px;
+    margin:15px 2px;
+    font-size: medium;
+    border-radius: 2%;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .1),
+                -10px -10px 10px rgba(255, 255, 255, .1),
+                inset 10px 10px 10px rgba(0, 0, 0, .1),
+                inset -10px -10px 10px rgba(255, 255, 255, .1);       
+ }
+.container form .step .btn{
+    width: 90%;
+    margin: auto;
+}
+.container form .step .btn .next-pay input{
+    border: none;
+    width: 25%; 
+    color: #fff; 
+    font-size: medium; 
+    background: var(--color);
+}
+.container form .step .btn button.submit-btn,.next-pay,.previous-btn,.next-btn{
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    background: var(--color);
+    font-family: "Bree Serif", sans-serif;
+    font-size: 1rem;
+    margin: 5px 2px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    transition: background .3s ease-in-out;
+    box-shadow:0px 5px 7px 6px rgba(0,0,0,.3);
+    color: #fff;
+    background: #e40046;
+}
+.appointment-header .btn,
+.appointment-header .check{
+    margin: 90%;
+    margin: auto;
+    margin-top: 5%;
+ }
+.appointment-header .btn button.submit-btn,.previous-btn,.next-btn, 
+.appointment-header .checkbox
+{
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    background: var(--color);
+    font-family: "Bree Serif", sans-serif;
+    font-size: 1rem;
+    margin: 5px 2px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    transition: background .3s ease-in-out;
+    box-shadow:0px 5px 7px 6px rgba(0,0,0,.3);
+    color: #fff;
+    background: #e40046;
+}
+@media only screen and (min-width: 600px){
+    .container .appointment-header section{
+        isplay: none;
+    }
+}

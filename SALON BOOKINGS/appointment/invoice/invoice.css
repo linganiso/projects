@@ -1,0 +1,116 @@
+
+    .logo{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .logo img{
+        width: 60%;
+        height: 60%;
+   }   
+    h1{
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    h4{
+        text-transform: uppercase;
+    }
+    .container-invoice p,span{
+        font-size: 16px;
+    }
+    .invoice-details{
+        float: right;
+        margin-bottom: 5%;  
+        margin-top: 0%;
+    }
+    .invoice-details p{
+        font-weight: bold;
+    }
+    .invoice-details span{
+        font-size: medium;
+    }
+    .invoice{
+        float: left;
+    }
+    .invoice span{
+        font-size: medium;
+    }
+    table{
+	    border:1px solid black;
+	    border-collapse:collapse;
+	    width:100%;
+	    margin-bottom: 2%;
+    }
+    table tr td .btn{
+	    padding:4%;
+	    margin-right:1%;
+	    cursor:pointer;
+	    background-color:rgb(5, 104, 104);
+	    color:#f1f1f1;
+	    border-radius:2px;
+	    border:none;
+    }
+    th{
+        width: 10%;
+    }
+    th, td{
+	    border:1px solid rgba(5, 104, 104, 0.895);;
+	    text-align:center;
+    }
+    th.left, td.left{text-align:left;}
+    thead, tfoot{
+        color: #fff;
+        background-color:rgba(5, 104, 104, 0.895);
+    }
+    tfoot{
+        font-weight:bold;
+    }
+    .btn-color{color:red;}
+    .btn-color{
+	    padding:5%;
+	    margin:5%;
+	    cursor:pointer;
+	    background-color:rgb(132, 8, 8);
+	    color:#f1f1f1;
+	    border-radius:2px;
+	    border:none;
+    }
+    .border{
+        height: 30vh;
+    }
+    .payment-info{
+        float: left;
+        width: 40%;
+        font-size: medium;
+        margin-top: 5%;
+    }
+    .payment-info p{
+        font-weight: bold;
+    }
+    .price-invoice{
+        float: right;
+        width: 55%;
+        font-size: medium;
+        margin-top: 5%;
+    } 
+    .price-invoice p{
+        float: right;
+        padding: 2%;
+    }
+    .price-invoice input{
+        width: 30%;
+        float: right;
+        border: none;
+    }   
+    .stamp{
+        border: 3px dotted #010101;
+        width: 40%; 
+        margin-left: 30%; 
+        text-align: center; 
+        font-weight: 700; 
+        letter-spacing: .5px; 
+        position: absolute;
+        z-index: 1; 
+        top: 85%;
+        transform: rotate(-15deg);
+    }
